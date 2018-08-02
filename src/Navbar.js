@@ -14,7 +14,7 @@ class Navbar extends Component {
   render() {
     return (
       <header>
-        <h2><a>Recipe App</a></h2>
+        <h2><a>Easy Recipe App</a></h2>
         <nav>
           <li><a onClick={this.props.onNewRecipe}>New Recipe</a></li>
           <li><a>Home</a></li>

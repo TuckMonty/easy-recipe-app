@@ -50,7 +50,7 @@ class RecipeApp extends Component {
           id:5,
           title:"Milkshake",
           ingredients:["Milk",'Ice Cream','Cinnamon'],
-          img:"https://images.unsplash.com/photo-1502719414926-613118be79d3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=33c47ed538ba787c2466de7b4ad22754&auto=format&fit=crop&w=634&q=80",
+          img:"https://images.unsplash.com/photo-1473115209096-e0375dd6b3b3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c0226b2a186031f765d4b50563b81d7a&auto=format&fit=crop&w=1050&q=80",
           instructions:"Mix milk and ice cream in a blender, drizzle cinnamon on top"
         }
       ],
@@ -59,6 +59,10 @@ class RecipeApp extends Component {
     }
     this.handleSave = this.handleSave.bind(this);
     this.onDelete = this.onDelete.bind(this);
+  }
+  
+  componentDidMount() {
+    document.title = "Easy Recipe App"
   }
   
   handleSave(recipe) {
